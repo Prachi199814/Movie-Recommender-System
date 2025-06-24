@@ -24,7 +24,7 @@ def recommend(movie):
         time.sleep(0.5)
     return recommended_movies,recommended_movie_poster
 
-movie_dict=pickle.load(open('movies_dict.pkl','rb'))
+movie_dict=pickle.load(open('movies.pkl','rb'))
 movies=pd.DataFrame(movie_dict)
 similarity=pickle.load(open('similarity.pkl','rb'))
 
